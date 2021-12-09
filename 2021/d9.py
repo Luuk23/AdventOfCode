@@ -66,7 +66,6 @@ def get_basin_size(coords, matrix):
 basins = []
 been_flag = np.zeros((size, size), dtype=bool)
 for ii, jj in low_points:
-    been_flag[ii][jj] = True
     count = 0
     basins.append(get_basin_size((ii, jj), numbers_bounded))
 
